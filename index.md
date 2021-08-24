@@ -1,8 +1,5 @@
 ## Graphics Tutorials
 
----
-youtubeId: 0SPX0h42xCs
----
 
-{% include youtubePlayer.html id=page.youtubeId %}
+{% include youtubePlayer.html id=0SPX0h42xCs %}
 
