@@ -1,4 +1,4 @@
-# Dynamic Cube Maps
+# Dynamic Cube Map
 
 ## Cubemap Textures
 
