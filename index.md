@@ -79,7 +79,7 @@ PS_OUT_Main_MRT PS_Main_MRT(VS_OUT_Main pIn)
 }
 ```
 
-Putting It All Together
+### Putting It All Together
 
 So now we have 2 textures to render the water  - a reflective map and a refractive map. 
 To produce waves of different frequencies we calculate 4 sets of texture coordinates in the vertex shader. Each is multiplied by different frequency factor. A time based component is then added to animate the waves. 
