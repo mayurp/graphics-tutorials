@@ -1,5 +1,6 @@
 # Graphics Tutorials
 
+* [Dynamic Cube Maps](dynamic-cube-map.md)
 
 ## Water Effect
 
