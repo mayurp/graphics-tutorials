@@ -64,10 +64,10 @@ struct PS_OUT_Main_MRT
 PS_OUT_Main_MRT PS_Main_MRT(VS_OUT_Main pIn)
 {
     PS_OUT_Main_MRT pOut;
-    pOut.RGBColor1 = PS_Main(pIn);       // Call regular pixel shader function
+    pOut.RGBColor1 = PS_Main(pIn);    // Call regular pixel shader function
     pOut.RGBColor2 = pOut.RGBColor1;  // Copy result to second output 
 
-    pOut.RGBColor2.a = 1.0f;    // alpha is 1 by default;
+    pOut.RGBColor2.a = 1.0f;          // alpha is 1 by default;
 
     // Set alpha mask to 0 for objects below the water plane
     float d = dot (mPlaneNormal,(pIn.posW - mPlanePoint));
@@ -99,7 +99,7 @@ VS_OUT_Water VS_Water(VS_IN_Water vIn)
 
     vOut.posTexC = vOut.posH;
 
-          // Texture coordinates to sample water bump map at different frequencies
+    // Texture coordinates to sample water bump map at different frequencies
     vOut.waterC1 = vin.texC*WAVE_FREQ1 + gTime*WAVE_VELOCITY1;
     vOut.waterC2 = vin.texC*WAVE_FREQ2 + gTime*WAVE_VELOCITY2;
     vOut.waterC3 = vin.texC*WAVE_FREQ3 + gTime*WAVE_VELOCITY3;
