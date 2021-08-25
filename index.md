@@ -1,11 +1,6 @@
 ## Graphics Tutorials
 
 
-Test
+Test2
 
-{% include youtubePlayer.html id=lDi9uFcD7XI %}
-
-<div class="embed-container">
-  <iframe width="700" height="480" src="https://www.youtube.com/embed/lDi9uFcD7XI" frameborder="0" allowfullscreen=""></iframe>
-</div>
-
+<iframe width="425" height="355" src="https://www.youtube.com/embed/0SPX0h42xCs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
