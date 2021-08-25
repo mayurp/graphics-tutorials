@@ -30,7 +30,9 @@ An easier solution is to simply pre-multiply the view matrix by R and render the
 
 The appearance of refraction through a transparent object can be produced by first rendering the scene behind the object to a texture. This is then used to texture the surface of the object when the scene is rendered to the back buffer in a second pass. Each texture coordinate is perturbed by a small amount to simulate the bending of light. These offsets can be loaded from a bump map and scaled accordingly.
 
-    float4 refractColour = RefractiveMap.Sample(sampler, texCoord + offset);
+```hlsl
+float4 refractColour = RefractiveMap.Sample(sampler, texCoord + offset);
+```
 
 The downside is that we have to render the entire scene twice. Once to create the refraction texture and once to render the scene to the backbuffer.
 
@@ -44,14 +46,14 @@ First be render the regular objects in the scene. For anything behind the water 
 
 DirectX 10 Code Extract:
 
-```
+```c++
 ID3D10RenderTargetView* renderTargets[2] = {m_pBackBufferRTV, m_pTextureMapRTV};
 m_pd3dDevice->OMSetRenderTargets(2, renderTargets, m_pDepthStencilView);
 ```
 
 Shader Code Extract:
 
-```
+```hlsl
 struct PS_OUT_Main_MRT
 {
     // The pixel shader can output 2 values simulatanously 
@@ -87,7 +89,7 @@ We combine the refractive and reflective colours based on the angle between the 
 
 Shader Code Extract:
 
-```
+```hlsl
 VS_OUT_Water VS_Water(VS_IN_Water vIn)
 {
     .....
