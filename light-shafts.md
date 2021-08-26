@@ -90,3 +90,4 @@ float4 PS_RadialBlur(VS_OUT pIn) : SV_Target
     raycolor *= mEdotL * EXPOSURE; 
     return raycolor;
 }
+```
