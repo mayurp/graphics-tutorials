@@ -116,3 +116,4 @@ void GS_CubeMap( triangle GS_IN_CUBEMAP input[3], inout TriangleStream<PS_IN_CUB
         }
     }
 }
+```
