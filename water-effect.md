@@ -27,7 +27,7 @@ An easier solution is to simply pre-multiply the view matrix by R and render the
 
 The appearance of refraction through a transparent object can be produced by first rendering the scene behind the object to a texture. This is then used to texture the surface of the object when the scene is rendered to the back buffer in a second pass. Each texture coordinate is perturbed by a small amount to simulate the bending of light. These offsets can be loaded from a bump map and scaled accordingly.
 
-```
+```hlsl
 float4 refractColour = RefractiveMap.Sample(sampler, texCoord + offset);
 ```
 
