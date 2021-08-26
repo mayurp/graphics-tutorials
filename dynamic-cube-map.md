@@ -1,6 +1,4 @@
 # Dynamic Cube Map
-
-This has been adapted from the first part of Chapter 17 of Frank Luna’s Introduction to 3D Game Programming with Direct3D 11.0.
  
 ## Cubemap Textures
 
@@ -9,6 +7,8 @@ Rather than 2D texture coordinates a 3 dimensional direction vector is used to l
 They are often used for skybox rendering but they can also be used to model reflective objects by projecting the environment onto the faces of the cube.
 For a given point on a reflective object's surface we reflect the eye to point direction vector by the surface normal  and use this as the lookup value. 
 
+This has been adapted from the first part of Chapter 17 of Frank Luna’s Introduction to 3D Game Programming with Direct3D 10.0.
+This goes a bit further by implementing 2nd order reflections and making some performance optimisations.
 
 ## Cubemap Generation
 
