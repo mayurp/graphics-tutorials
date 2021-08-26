@@ -7,7 +7,7 @@ This effect can be recreated purely as a post process by applying a type of radi
 The results are shown below:
 
 <image src="https://user-images.githubusercontent.com/713970/130870678-ce027006-a6a8-4a19-94e3-6d51b780d443.png" width="400" height="320"> <image src="https://user-images.githubusercontent.com/713970/130870813-04b400cf-73fe-4002-b81f-1a760cc8e54e.png" width="400" height="320">
-  
+
 Note that the sun in this image was just a white coloured sphere before the post processing was applied.
 The blur has an added bonus of producing a natural looking glow effect with streaks.
 
@@ -91,3 +91,4 @@ float4 PS_RadialBlur(VS_OUT pIn) : SV_Target
     return raycolor;
 }
 ```
+                                    
