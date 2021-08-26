@@ -46,7 +46,7 @@ We therefore need to keep the dimensions of L to a minimum. Here I have used the
 which greatly reduces the cost of blur.
 
   
-## Shader Code Extract:
+Shader Code Extract:
 
 ```hlsl
 float4 PS_RadialBlur(VS_OUT pIn) : SV_Target
