@@ -1,5 +1,7 @@
 # Dynamic Cube Map
 
+This has been adapted from the first part of Chapter 17 of Frank Luna’s Introduction to 3D Game Programming with Direct3D 11.0.
+ 
 ## Cubemap Textures
 
 Cubemaps are a type of texture made up of 6 faces. They can represent a 3 dimensional rendering of an area. 
