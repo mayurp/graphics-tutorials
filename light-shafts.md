@@ -21,7 +21,7 @@ Then when we apply the blur process to create L only pixels with an alpha value 
 
 ## Issues
 
-An problem highlighted in the GPU gems article is that light shafts flicker as occluding objects pass the edge of the screen.
+A problem highlighted in the GPU gems article is that light shafts flicker as occluding objects pass the edge of the screen.
 This is because the objects fall outside the range of possible samples. I applied a simple fix for this by changing the sampler state addressing mode to "mirror".
 
 ```hlsl
